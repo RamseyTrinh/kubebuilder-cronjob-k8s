@@ -39,6 +39,7 @@ type CronJobSpec struct {
 	JobTemplate                batchv1.JobTemplateSpec `json:"jobTemplate"`
 	SuccessfulJobsHistoryLimit *int32                  `json:"successfulJobsHistoryLimit,omitempty"`
 	FailedJobsHistoryLimit     *int32                  `json:"failedJobsHistoryLimit,omitempty"`
+	abctest *int32 'json:test'
 }
 type ConcurrencyPolicy string
 
